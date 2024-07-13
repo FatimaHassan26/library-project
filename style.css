@@ -1,0 +1,118 @@
+body {
+    height: 100vh;
+
+}
+.header {
+    font-size: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgb(107, 20, 71);
+    color: white;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 2fr 7fr 1fr;
+    gap: 30px;
+    font-family: fantasy, 'Open-sans';
+}
+
+.form{
+    grid-row: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#addBook {
+    width: 140px;
+    height: 60px;
+    background: rgb(107, 20, 71);
+    border-radius: 16px;
+    box-shadow: none;
+    border: none;
+    color: white;
+    font-family: fantasy;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+label {
+    display: block;
+}
+dialog {
+    position: relative;
+    width: 600px;
+    margin-left: -300px;
+    height: 450px;
+    margin-top: -200px;
+    margin: 400px;
+    box-shadow: none;
+    border: none;
+    border-radius: 10px;
+    padding: 30px;
+    color: rgb(107, 20, 71);
+    gap: 30px;
+}
+
+#bookForm {
+    font-size: 30px;
+}
+
+input{
+    width: 500px;
+    height: 40px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 24px;
+  }
+#book-cards {
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 30px;
+}
+
+.book-card {
+    background: rgb(236, 231, 234);
+    height: 400px;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 35px;
+    color: rgb(107, 20, 71);
+}
+
+.remove-book-btn, .toggle-read-btn, #bookForm > #submitButton {
+    width: 120px;
+    height: 40px;
+    background: rgb(133, 34, 92);
+    border-radius: 16px;
+    box-shadow: none;
+    border: none;
+    color: white;
+    font-family: fantasy;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#bookForm > #close-form {
+    background: rgb(133, 34, 92);
+    border-radius: 16px;
+    box-shadow: none;
+    border: none;
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+    height: 40px;
+    width: 40px;
+
+}
+
+#dialog-wrapper {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+}
