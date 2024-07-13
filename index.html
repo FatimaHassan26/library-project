@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>My Library</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <p>Welcome To Your Bookshelf: Remembering Reads & Recommendations </p>
+        </div>
+        <div class="form">
+            <button id="addBook">New Book</button>
+            <div id="dialog-wrapper">
+                <dialog id="newBookDialog">
+                    <form method="dialog" id="bookForm">
+                        <button id="close-form" value="cancel" formmethod="dialog">X</button>
+                        <label for="book_title">Book Title</label>
+                        <input type="text" name="book_title" id="book_title">
+
+                        <label for="book_author">Book Author</label>
+                        <input type="text" name="book_author" id="book_author">
+
+                        <label for="num_pages">Pages</label>
+                        <input type="number" name="num_pages" id="num_pages">
+
+                        <label for="read">Read</label>
+                        <input type="text" name="read" id="read">
+                        <button id="submitButton" value="default">Submit</button>
+                    </form>
+                </dialog>
+            </div>
+        </div>
+
+    <div id="book-cards">
+    </div>
+
+</div>
+   
+<script src="script.js"></script>   
+</body>
+</html>
